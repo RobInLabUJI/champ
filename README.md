@@ -87,7 +87,11 @@ If you want to use a [joystick](https://www.logitechg.com/en-hk/products/gamepad
 
 #### 2.2.2 Run [Nav2](https://navigation.ros.org/)'s navigation and [slam_toolbox](https://github.com/SteveMacenski/slam_toolbox):
 
-    ros2 launch champ_config slam.launch.py rviz:=true 
+    ros2 launch champ_config slam.launch.py
+
+#### 2.2.3 Run RViz
+
+    rviz2 -d `ros2 pkg prefix --share champ_navigation`/rviz/nav2_default_view.rviz
 
 To start mapping:
 
